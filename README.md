@@ -8,6 +8,7 @@
 - [Contributors](#Contributors)
 - [Licence](#Licence)
 - [Repository](#Repository)
+- [Heroku](#Heroku)
 - [GitHub Info](#GitHub)
 
   ## Description
@@ -30,10 +31,19 @@
 
   For the Repo please visit https://github.com/ryanabrown14/note-taker
 
+  ## Heroku
+
+  https://cryptic-thicket-87001.herokuapp.com/
+
   ## GitHub
 
   ryanabrown14
   If you have any questions please contatact https://github.com/ryanabrown14 
+
+
+## Issues
+
+For some reason the saved notes only apear on page refresh.
 
 
 
