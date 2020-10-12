@@ -5,12 +5,13 @@ module.exports = app => {
     fs.readFile("db/db.json", "utf8", (err, data) => {
         if (err) throw err;
 
-        let notes = JSON.parse(data)
-
+        notes = JSON.parse(data);
+        function newId() {
         for (let i = 0; i < notes.length; i++) {
             notes[i].id = '' + i;
         }
-        ;
+    }
+        
 
         app.get("/api/notes", function(req, res) {
             res.json(notes);
@@ -18,6 +19,7 @@ module.exports = app => {
         app.post('/api/notes', function(req, res) {
             let newNote = req.body;
             notes.push(newNote);
+            newId();
            noteDb();  
         });
 
